@@ -1,5 +1,5 @@
 const formatPrice = (number) => {
-  return number.toLocaleString();
+  return String(number).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 };
 
 export default formatPrice;
